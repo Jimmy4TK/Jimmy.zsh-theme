@@ -3,7 +3,7 @@ function pws {
   prompt=" "
   
   path_size=${#PWD}
-  (( spare_width = ${spare_width} - (${path_size} - 15) ))
+  (( spare_width = ${spare_width} - (${path_size} - 10) ))
 
   while [ ${#prompt} -lt $spare_width ]; do
     prompt=" $prompt"
@@ -26,3 +26,4 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$fg_bold[red]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg_bold[green]%}✓%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}\Ue0a0%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_FONT="JetBrains Mono"
